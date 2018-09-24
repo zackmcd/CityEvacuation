@@ -36,23 +36,15 @@
      city2[i].evacuees = citie[i].evacuees;
      city2[i].roadCount = citie[i].roadCount;
      city2[i].roads = new Road[city2[i].roadCount];
-     //cout << "i = " << i << " cityID = " << city2[i].ID << " pop = " << city2[i].population << " evacs = " << city2[i].evacuees << endl;
      for (int j = 0; j < citie[i].roadCount; j++)
      {
        city2[i].roads[j].ID = citie[i].roads[j].ID;
        city2[i].roads[j].peoplePerHour = citie[i].roads[j].peoplePerHour;
        city2[i].roads[j].destinationCityID = citie[i].roads[j].destinationCityID;
-       //cout << "j = " << j << " roadID = " << city2[i].roads[j].ID << " cap = " << city2[i].roads[j].peoplePerHour << " destCityID = " << city2[i].roads[j].destinationCityID << endl;
      }
-     //cout << endl;
    }
   } // Evac()
 
-
-
-
-
-  
 
   void Evac::evacuate(int *evacIDs, int numEvacs, EvacRoute *evacRoutes, int &routeCount)
   {
